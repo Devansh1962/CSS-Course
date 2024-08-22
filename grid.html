@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>grid</title>
+    <!-- multi dimensional -->
+    <style>
+         /* #a{text-align: center;}
+        #conteaner{
+            border: solid black 3px;
+            height: 200px;
+            width: 400px;
+            background-color: rgb(142, 204, 212);
+            grid-template-columns: 80px 80px;
+            grid-template-rows: 80px 80px;
+            display: grid;
+            
+        } */
+
+         /* .box{ */
+            /* width: 60px;
+            height: 60px; */
+            /* margin: 5px; */
+            /* border: rgb(66, 45, 6) solid 2px;
+        }  */
+        /* .box1{
+            background-color: blueviolet;
+            grid-column: 1/2;
+            grid-row: 1/2;
+           
+        }
+        .box2{
+            background-color: brown;
+            grid-column: 2/2;
+            grid-row: 1/2;
+           
+
+        }    
+
+        .box3{background-color: rgb(19, 104, 56);
+            grid-column: 1/2;
+            grid-row: 2/2;
+        
+        } 
+        .box4{background-color: darkcyan;
+            grid-column: 2/2;
+            grid-row: 2/2;
+            
+        
+        } */
+
+        #conteaner{
+            width: 100%;
+            height: 200px;
+            border: solid black 2px;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                "mani main artical"
+                                "footer footer footer"
+             
+            ;
+        }
+
+        .box{
+            border: solid black 2px;
+           
+             
+            
+            
+        }
+
+        .box1{
+            grid-area: nav;
+            background-color: aquamarine;
+        }
+        .box2{
+            grid-area: main;
+            background-color: antiquewhite;
+        }
+
+        .box3{
+            grid-area: artical;
+            background-color: darksalmon;
+        }
+        .box4{
+            grid-area: footer;
+            background-color: hotpink;
+        }
+
+        .box5{
+            grid-area: nav;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="a">grid Container</h1>
+    <div id="conteaner">
+        <div class="box box1">Grid1</div>
+        <div class="box box2">Grid2</div>
+        <div class="box box3">Grid3</div>
+        <div class="box box4">Grid4</div>
+        <div class="box box5">Grid5</div>
+        
+    
+</body>
+</html>

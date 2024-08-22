@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Flex box: Direction</title>
+    <style>
+        #conteaner{
+            border: solid black 3px;
+            height: 200px;
+            width: 400px;
+            background-color: rgb(142, 204, 212);
+            /* use flex box */
+            display:flex ;
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+            /* flex-direction: row; */
+
+            /* Justify-content: use main-axis along */
+            /* justify-content: flex-start;
+            justify-content:flex-end;
+            justify-content: center;
+            justify-content:space-around;
+            justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            justify-content: center;
+
+            /* Flex Wrap */
+            /* flex-wrap: nowrap; */
+             /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse;  */
+
+            /* Align items:use cross-axis along */
+            /* align-items: center; */
+            /* align-items: baseline;
+            align-items:end; */
+
+            /* Align content: adjust space b/w cross-axis */
+            /* align-content: center; */
+
+        }
+        #a{text-align: center;}
+        .box{
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            border: rgb(66, 45, 6) solid 2px;
+        }
+        .box1{
+            background-color: blueviolet;
+            /* order: change oredr items */
+            order: 3;
+        }
+        .box2{
+            background-color: brown;
+            order: 4;
+            /*Align self: difine indivsual items   */
+
+            /* align-self:flex-end; */
+
+            /* Flex Shrink: indivsual items ki size shrink kar sakte hai */
+
+            /* flex-shrink: 0.2; */
+
+            /* flex-grow: use width adjest */
+            flex-grow: 1;
+
+        }    
+
+        .box3{background-color: rgb(19, 104, 56)
+              ; /*align-self:self-start;*/
+            order: 1;} 
+        .box4{background-color: darkcyan;
+            order: 2; 
+            flex-shrink: 0.2;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1 id="a">Flex Container</h1>
+    <div id="conteaner">
+        <div class="box box1">Flex box1</div>
+        <div class="box box2">Flex box2</div>
+        <div class="box box3">Flex box3</div>
+        <div class="box box4">Flex box4</div>
+        
+     
+     
+     
+    </div>
+    
+</body>
+</html>

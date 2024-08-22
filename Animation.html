@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Animation</title>
+    
+
+    <style>
+
+      .a{
+            /* background-color: plum; */
+            height:70px;
+            width: 70px;
+            padding: 5px;
+            border-radius: 5px;
+            border: black solid 4px;
+            position: relative;
+            top: 70px;
+            left: 40px;
+            background-color: blueviolet;
+
+            /* Animation proerty */
+            /* animation-name: ghumakad;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+
+            animation-iteration-count: 4 ; */
+            /* animation-direction:alternate-reverse; */
+
+            /* short tarika 
+            animation: name duration funcation delay itreation-count direction */
+
+            animation: ghumakad 3s ease-in-out 1s 3 alternate;
+
+        
+
+        }
+
+        /* define animation */
+
+
+        @keyframes  ghumakad {
+
+            /* from {background-color: blueviolet;}
+            to {background-color: brown;} */
+
+            /* from {left: 40px; background-color: blueviolet;}
+            to {left: 400px; background-color: brown;} */
+
+            0% {left: 40px; background-color: blueviolet;}
+            30% {left: 100px; top: 300px ; background-color: brown;}
+            70% {left: 200px; top: 60px; background-color: chartreuse;}
+            100% {left: 300px; top: 230px; background-color: hotpink;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="rotate" class="a">Animation</div>
+    
+</body>
+</html>

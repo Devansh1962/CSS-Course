@@ -1,0 +1,17 @@
+h1{
+    color: cadetblue;
+    text-shadow: 1px 4px 3px rgb(140, 131, 131);
+}
+
+p{
+    color: coral;
+    line-height: 2;
+}
+
+a:link{
+    color: tomato;
+}
+
+a:visited{
+    color: blueviolet;
+}

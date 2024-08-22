@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CSS Transfrom</title>
+    <!-- CSS PART -->
+
+    <style>
+        /* Rotate */
+
+        .a{
+            /* background-color: plum; */
+            height:70px;
+            width: 70px;
+            padding: 5px;
+            border-radius: 5px;
+            border: black solid 4px;
+            position: relative;
+            top: 70px;
+            left: 100px;
+            /* transform: rotate(40deg); */
+            transition: all 0.5s ease-in-out ;
+            margin: 20px;
+        }
+
+        #rotate{
+            background-color: purple;
+
+        }
+        #scale{
+            background-color: rgb(222, 131, 222);
+        }
+
+        #translate{
+            background-color: rgb(213, 54, 54);
+        }
+
+        #skew{
+            background-color: forestgreen;
+            position: relative;
+            top: -100px;
+           left: 300px;
+        }
+        #rotate:hover{
+
+            /* transform: rotatex(50deg); */
+            /* transform: rotatey(50deg); */
+            transform: rotate(270deg);
+
+        }
+
+        #scale:hover{
+            /* scale: use size changeable */
+            transform: scale(2);
+            /* transform: scalex(2); */
+            /* transform: scaley(2); */
+        }
+
+        #translate:hover{
+            /* translate: change position */
+            transform: translate(80px);
+            /* transform: translatey(80px); */
+        }
+
+        #skew:hover{
+            transform: skew(90deg);
+            /* transform: skewy(30deg); */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="rotate" class="a">Rotate</div>
+    <div id="scale" class="a">scale</div>
+    <div id="translate" class="a">transalate</div>
+    <div id="skew" class="a">Skew</div>
+    
+    
+</body>
+</html>

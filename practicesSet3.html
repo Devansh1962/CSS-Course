@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Animation practices Set</title>
+    <style>
+        #Process_contaner{
+            height: 14px;
+            width: 420px;
+            border: black solid 3px;
+            position: relative;
+            left: 6%;
+            top:20px;
+            border-radius: 10px;
+        }
+
+        .Bar{
+            background-color: rgb(79, 187, 187);
+            height: 100%;
+            border-radius: 10px;
+            animation: animate_process 2s ease-in-out 0s ;
+        }
+
+        @keyframes animate_process {
+            /* from {width:0%;}
+            to {width:50%;} */
+
+            0%{width:0%;}
+        50%{width:93%;}
+        90%{width:50%;}
+        100%{width: 100%;}
+            
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="Process_contaner">
+        <div class="Bar"></div>
+    </div>
+    
+</body>
+</html>

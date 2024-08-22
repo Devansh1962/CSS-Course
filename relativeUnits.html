@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Relative unit: percentange</title>
+    <style>
+        body{
+            font-size: 60px;
+        }
+        *{
+            margin: 0; padding: 0;
+        }
+
+        #first{
+            background-color: aqua;
+            width: 50vw;
+            height: 40vw;
+            font-size: 25px;
+        }
+        #second{
+            background-color: brown;
+            width: 75%;
+            height: 40%;
+            /* em: relate parents */
+            /* font-size: 2em; */
+            /*  rem: relate boday size  */
+
+            /* font-size: 2rem; */
+        }
+
+    </style>
+</head>
+<body> Boday
+    <div id="first"> First
+        <div id="second">Second</div>
+    </div>
+    
+</body>
+</html>

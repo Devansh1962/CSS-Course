@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseduo</title>
+    <!-- CSS part -->
+    <style>
+
+        #click{
+            background-color:rgb(49, 126, 129);
+            height: 35px;
+            width: 150px;
+            border-radius: 8px;
+            border: black solid 3px;
+            margin: 25px;
+
+            /* Transition property */
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function:linear;
+            transition-delay: 0s; */
+            /* short way 
+            transition: property duration function delay */
+            transition:all 1s ease-in-out 0s ;
+        }
+      #click:hover{
+        height: 55px;
+        width: 180px;
+        border: rgb(221, 159, 25) solid 3px;
+        background-color: indianred;
+      }
+
+      #click:active{
+        background-color: rgb(7, 77, 37);
+        height: 55px;
+        width: 180px;
+        
+      }
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- HTML PART  -->
+    <button id="click">Click</button>
+    
+</body>
+</html>
